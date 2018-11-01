@@ -129,10 +129,14 @@ namespace BDDProject.TestScript.Steps
 
         }
         [Test]
-        [Then(@"I should be able to see a warning message displayed in the email section for Unacceptable characters")]
-        public void ThenIShouldBeAbleToSeeAWarningMessageDisplayedInTheEmailSectionForUnacceptableCharacters()
+       
+       [Then(@"I should be able to see a warning message displayed in the email section to include characters")]
+        public void ThenIShouldBeAbleToSeeAWarningMessageDisplayedInTheEmailSectionToIncludeCharacters()
         {
-            BBCSignInPage page = new BBCSignInPage();
+     
+
+
+        BBCSignInPage page = new BBCSignInPage();
             bool status = ObjectRepository.driver.FindElement(page.ShowWarningMessageEmailNoValid).Displayed;
             Assert.True(status);
             Thread.Sleep(1000);
@@ -178,19 +182,7 @@ namespace BDDProject.TestScript.Steps
 
         }
 
-        [Test]
-        [Then(@"warning message should still show")]
-        public void ThenWarningMessageShouldStillShow()
-        {
-            BBCSignInPage page = new BBCSignInPage();
-            bool status = ObjectRepository.driver.FindElement(page.ShowWarningMessageEmailNoValid).Displayed;
-            Assert.True(status); 
-            Thread.Sleep(1000);
-            InSertReportingSteps();
-            Thread.Sleep(1000);
-            TearDownReport();
-
-        }
+       
 
         [Test]
         [Given(@"I enter a valid (.*) in UpperCase")]
@@ -211,11 +203,14 @@ namespace BDDProject.TestScript.Steps
             BBCSignInPage page = new BBCSignInPage();
             bool Result = ObjectRepository.driver.FindElement(page.ShowWarningMessageEmailNoValid).Displayed;
             Assert.True(Result);
+            Thread.Sleep(1000);
+            InSertReportingSteps();
+            Thread.Sleep(1000);
+            TearDownReport();
 
-            Thread.Sleep(2000);
 
-                        }
-        
+        }
+
 
         [Test]
         [Given(@"I enter no Username in the username section")]

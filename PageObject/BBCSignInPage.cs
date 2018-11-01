@@ -30,11 +30,12 @@ namespace BDDProject.PageObject
         public By AccountNotLinkToBBC = By.XPath(".//*[@id='form-message-username']/descendant::a[text()='register for a new account']");
         public By AcceptableCharacters = By.XPath(".//*[@id='form-message-username']/p/span/span");
         public By UnacceptableCharacters = By.XPath(".//*[@id='form-message-username']/p/span/span");
-        public By ShowWarningMessageEmailNoValid = By.XPath(".//*[@id='form-message-password']/p/span");
+        public By ShowWarningMessageEmailNoValid = By.XPath(".//*[@id='form-message-username']/p/span/span[3]");
         public By ShortPassword = By.XPath(".//*[@id='form-message-password']/p/span/span[text()='Sorry, that password is too short']");
         public By PasswordToContainLetter = By.XPath(" .//*[@id='form-message-password']/p/span");
         public By PasswordToContainCharacters = By.XPath(" .//*[@id='form-message-password']/p/span");
         public By UsernameTooLong = By.XPath(".//*[@id='form-message-username']/p/span");
+        public By AccountDisplayed = By.XPath(".//*[@id='idcta-link']");
 
         #endregion
 

@@ -38,18 +38,7 @@ namespace BDDProject.TestScript.Steps
 
 
         }
-        [Test]
-        [Given(@"I enter valid Username in the email section")]
-        public void GivenIEnterValidUsernameInTheEmailSection()
-        {
-            BBCSignInPage page = new BBCSignInPage();
-
-            page.InputUsername();
-            Thread.Sleep(1000);
-            InSertReportingSteps();
-            
-
-        }
+       
         [Test]
         [Given(@"wrong Password for the first time")]
         public void GivenWrongPasswordForTheFirstTime(Table table)

@@ -96,11 +96,21 @@ namespace BDDProject.TestScript.Steps
 
         }
 
+        [Test]
+        [Given(@"I input valid username")]
+        public void GivenIInputValidUsername()
+        {
+            BBCSignInPage page = new BBCSignInPage();
 
-
-
+            page.InputUsername();
+            Thread.Sleep(1000);
+            InSertReportingSteps();
 
         }
+
+
+
+    }
 
 
 

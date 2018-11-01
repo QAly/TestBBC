@@ -81,23 +81,30 @@ namespace BDDProject.TestScript.Feature
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Sigining In Successfully with Email")]
         [NUnit.Framework.CategoryAttribute("Browser_Chrome")]
-        public virtual void SiginingInSuccessfullyWithEmail()
+        [NUnit.Framework.TestCaseAttribute("KELEBALYDIE@GMAIL.COM", null)]
+        [NUnit.Framework.TestCaseAttribute("kelebalydie@gmail.com", null)]
+        public virtual void SiginingInSuccessfullyWithEmail(string email, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sigining In Successfully with Email", null, new string[] {
-                        "Browser_Chrome"});
+            string[] @__tags = new string[] {
+                    "Browser_Chrome"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sigining In Successfully with Email", null, @__tags);
 #line 12
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 6
 this.FeatureBackground();
 #line 13
- testRunner.Given("I enter valid Email in the email section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given(string.Format("I enter valid {0} in the email section", email), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 14
  testRunner.And("I enter valid Password in the password section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 15
  testRunner.When("I click on Sigin in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 16
- testRunner.Then("I should be redirected to BBC account page veryfy by registred username diplayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I should be redirected to BBC account page veryfy by account being displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -105,23 +112,32 @@ this.FeatureBackground();
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Sigining In Successfully with Username")]
         [NUnit.Framework.CategoryAttribute("Browser_Chrome")]
-        public virtual void SiginingInSuccessfullyWithUsername()
+        [NUnit.Framework.TestCaseAttribute("LYDIE10", null)]
+        [NUnit.Framework.TestCaseAttribute("Lydie10", null)]
+        [NUnit.Framework.TestCaseAttribute("LydiE 10", null)]
+        public virtual void SiginingInSuccessfullyWithUsername(string username, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sigining In Successfully with Username", null, new string[] {
-                        "Browser_Chrome"});
-#line 19
+            string[] @__tags = new string[] {
+                    "Browser_Chrome"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sigining In Successfully with Username", null, @__tags);
+#line 22
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 6
 this.FeatureBackground();
-#line 20
- testRunner.Given("I enter valid Username in the email section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 21
- testRunner.And("I enter valid Password in the password section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 22
- testRunner.When("I click on Sigin in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 23
- testRunner.Then("I should be redirected to BBC account page veryfy by registred username diplayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Given(string.Format("I enter a valid {0} in UpperCase", username), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 24
+ testRunner.And("I enter valid Password in the password section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 25
+ testRunner.When("I click on Sigin in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 26
+ testRunner.Then("I should be redirected to BBC account page veryfy by regitered username being dis" +
+                    "played", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

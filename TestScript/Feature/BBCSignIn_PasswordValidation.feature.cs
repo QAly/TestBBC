@@ -31,12 +31,8 @@ namespace BDDProject.TestScript.Feature
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BBCSigningIn_PasswordValidation", @"	Open BBC Page
-	check signing in using invalid Email or username credential
-	Check the right information is displayed to help user to sign in correctly:
-	
-	Warning message: Sorry, that password isn't valid. Please include something that isn't a letter
-	Warning Message: Sorry, that password isn't valid. Please include a letter", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BBCSigningIn_PasswordValidation", "\tOpen BBC Page\r\n\tcheck signing in using invalid Email or username credential\r\n\tCh" +
+                    "eck the right information is displayed to help user to sign in correctly", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -76,8 +72,8 @@ namespace BDDProject.TestScript.Feature
         
         public virtual void FeatureBackground()
         {
+#line 10
 #line 11
-#line 12
  testRunner.Given("As a user I am on \"BBCURL\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
         }
@@ -95,18 +91,18 @@ namespace BDDProject.TestScript.Feature
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sigining In with Short length Password", null, @__tags);
-#line 15
+#line 14
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 11
+#line 10
 this.FeatureBackground();
+#line 15
+ testRunner.Given("I input valid username", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 16
- testRunner.Given("I enter valid Username in the email section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 17
  testRunner.And(string.Format("I enter a {0} of less than eight characters", password), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 18
+#line 17
  testRunner.When("I click on Sigin in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 19
+#line 18
  testRunner.Then("I should be able to see a warning message displayed in the password section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -125,18 +121,18 @@ this.FeatureBackground();
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sigining In with Password including Letters only", null, @__tags);
-#line 28
+#line 27
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 11
+#line 10
 this.FeatureBackground();
+#line 28
+ testRunner.Given("I input valid username", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 29
- testRunner.Given("I enter valid Username in the email section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 30
  testRunner.And(string.Format("I enter a {0} that only contain letters", password), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 31
+#line 30
  testRunner.When("I click on Sigin in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 32
+#line 31
  testRunner.Then("I should be able to see a warning message to include characters", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -155,18 +151,18 @@ this.FeatureBackground();
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sigining In with Invalid Password Including Characters Only", null, @__tags);
-#line 40
+#line 39
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 11
+#line 10
 this.FeatureBackground();
+#line 40
+ testRunner.Given("I input valid username", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 41
- testRunner.Given("I enter valid Username in the email section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 42
  testRunner.And(string.Format("I enter a {0} that only contain characters and numbers", password), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 43
+#line 42
  testRunner.When("I click on Sigin in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 44
+#line 43
  testRunner.Then("I should be able to see a warning message displayed to include letter", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

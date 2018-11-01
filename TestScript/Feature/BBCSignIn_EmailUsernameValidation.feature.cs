@@ -81,9 +81,8 @@ namespace BDDProject.TestScript.Feature
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Sigining In with Invalid Email")]
         [NUnit.Framework.CategoryAttribute("Browser_Chrome")]
-        [NUnit.Framework.TestCaseAttribute("kelebalydie@gmailcom", null)]
         [NUnit.Framework.TestCaseAttribute("keleba@com", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie@", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10@", null)]
         [NUnit.Framework.TestCaseAttribute("lydiekelebalydie@gmail.com", null)]
         public virtual void SiginingInWithInvalidEmail(string email, string[] exampleTags)
         {
@@ -115,7 +114,6 @@ this.FeatureBackground();
         [NUnit.Framework.DescriptionAttribute("Sigining In with a Valid Email not linked to a BBC Account")]
         [NUnit.Framework.CategoryAttribute("Browser_Chrome")]
         [NUnit.Framework.TestCaseAttribute("kelebalydie@gmail.co.uk", null)]
-        [NUnit.Framework.TestCaseAttribute("KELEBALYDIE@GMAIL.COM", null)]
         [NUnit.Framework.TestCaseAttribute("senylydie@hotmail.co.uk", null)]
         public virtual void SiginingInWithAValidEmailNotLinkedToABBCAccount(string email, string[] exampleTags)
         {
@@ -126,18 +124,18 @@ this.FeatureBackground();
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sigining In with a Valid Email not linked to a BBC Account", null, @__tags);
-#line 25
+#line 24
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 7
 this.FeatureBackground();
-#line 26
+#line 25
  testRunner.Given(string.Format("I input {0} in the dedicated email section", email), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 27
+#line 26
  testRunner.And("I enter valid Password in the password section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 28
+#line 27
  testRunner.When("I click on Sigin in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 29
+#line 28
  testRunner.Then("I should be able to see a warning message displayed in the email section for vali" +
                     "d Email Not Linked to a BBC account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -147,22 +145,21 @@ this.FeatureBackground();
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Sigining In with Invalid Username including Acceptable characters")]
         [NUnit.Framework.CategoryAttribute("Browser_Chrome")]
-        [NUnit.Framework.TestCaseAttribute("lydie233", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie233%", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie233$", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie233?", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie233#", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie~", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie123^", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie123=", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie123_", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie123+", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie123}", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie123{", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie123\\", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie123/", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie123\'", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie123-", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10233%", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10233$", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10233?", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10233#", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10233~", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10123^", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10123=", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10123_", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10123+", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10123}", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10123{", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10123\\", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10123/", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10123\'", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10123-", null)]
         [NUnit.Framework.TestCaseAttribute("kelebalydiegmailcom", null)]
         public virtual void SiginingInWithInvalidUsernameIncludingAcceptableCharacters(string username, string[] exampleTags)
         {
@@ -173,18 +170,18 @@ this.FeatureBackground();
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sigining In with Invalid Username including Acceptable characters", null, @__tags);
-#line 39
+#line 37
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 7
 this.FeatureBackground();
-#line 40
+#line 38
  testRunner.Given(string.Format("I input {0} in the username box", username), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 41
+#line 39
  testRunner.And("I enter valid Password in the password section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 42
+#line 40
  testRunner.When("I click on Sigin in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 43
+#line 41
  testRunner.Then("I should be able to see a warning message displayed in the email section for acce" +
                     "ptable characters", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -194,15 +191,15 @@ this.FeatureBackground();
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Sigining In with Invalid Username Including Characters Not Accepted")]
         [NUnit.Framework.CategoryAttribute("Browser_Chrome")]
-        [NUnit.Framework.TestCaseAttribute("lydie.", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie*", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie!", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie,", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie:", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie!", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie&", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie>", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie<", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10.", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10*", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10!", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10,", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10:", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10!", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10&", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10>", null)]
+        [NUnit.Framework.TestCaseAttribute("lydie10<", null)]
         public virtual void SiginingInWithInvalidUsernameIncludingCharactersNotAccepted(string username, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -212,89 +209,20 @@ this.FeatureBackground();
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sigining In with Invalid Username Including Characters Not Accepted", null, @__tags);
-#line 66
+#line 63
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 7
 this.FeatureBackground();
-#line 67
+#line 64
  testRunner.Given(string.Format("I enter invalid {0} including unacceptable charaters", username), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 68
+#line 65
  testRunner.And("I enter valid Password in the password section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 69
+#line 66
  testRunner.When("I click on Sigin in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 70
- testRunner.Then("I should be able to see a warning message displayed in the email section for Unac" +
-                    "ceptable characters", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Sigining In with Invalid Username warning message to still show")]
-        [NUnit.Framework.CategoryAttribute("Browser_Chrome")]
-        [NUnit.Framework.TestCaseAttribute("lydie>", null)]
-        [NUnit.Framework.TestCaseAttribute("lydie<", null)]
-        public virtual void SiginingInWithInvalidUsernameWarningMessageToStillShow(string username, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "Browser_Chrome"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sigining In with Invalid Username warning message to still show", null, @__tags);
-#line 85
-this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 7
-this.FeatureBackground();
-#line 86
- testRunner.Given(string.Format("I enter invalid {0} characters", username), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 87
- testRunner.When("I click on Sigin in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 88
- testRunner.Then("I should be able to see a warning message displayed  for Unacceptable characters", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 89
- testRunner.And("I enter valid Password in the password section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 90
- testRunner.When("I click on Sigin in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 91
- testRunner.Then("warning message should still show", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Sigining In with Username in UpperCase")]
-        [NUnit.Framework.CategoryAttribute("Browser_Chrome")]
-        [NUnit.Framework.TestCaseAttribute("LYDIE", null)]
-        [NUnit.Framework.TestCaseAttribute("Lydie", null)]
-        [NUnit.Framework.TestCaseAttribute("lYdie", null)]
-        [NUnit.Framework.TestCaseAttribute("LydiE", null)]
-        public virtual void SiginingInWithUsernameInUpperCase(string username, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "Browser_Chrome"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sigining In with Username in UpperCase", null, @__tags);
-#line 100
-this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 7
-this.FeatureBackground();
-#line 101
- testRunner.Given(string.Format("I enter a valid {0} in UpperCase", username), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 102
- testRunner.And("I enter valid Password in the password section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 103
- testRunner.When("I click on Sigin in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 104
- testRunner.Then("I should be able to see a warning message displayed in the email section for case" +
-                    " sensitive not accepted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 67
+ testRunner.Then("I should be able to see a warning message displayed in the email section to inclu" +
+                    "de characters", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -306,18 +234,18 @@ this.FeatureBackground();
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sigining In with blank EmailUsername or Password", null, new string[] {
                         "Browser_Chrome"});
-#line 113
+#line 83
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 7
 this.FeatureBackground();
-#line 114
+#line 84
  testRunner.Given("I enter no Username in the username section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 115
+#line 85
  testRunner.And("I enter no password in the password section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 116
+#line 86
  testRunner.When("I click on Sigin in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 117
+#line 87
  testRunner.Then("I should be able to see a warning message displayed in the username section as we" +
                     "ll as in password section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -331,18 +259,18 @@ this.FeatureBackground();
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sigining In with blank EmailUsername", null, new string[] {
                         "Chrome_Browser"});
-#line 121
+#line 91
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 7
 this.FeatureBackground();
-#line 122
+#line 92
     testRunner.Given("I enter no Username in the username section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 123
+#line 93
  testRunner.And("I enter valid Password in the password section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 124
+#line 94
  testRunner.When("I click on Sigin in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 125
+#line 95
  testRunner.Then("I should be able to see a warning message displayed in the username section as we" +
                     "ll as in password section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -356,18 +284,18 @@ this.FeatureBackground();
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sigining In with blank Password", null, new string[] {
                         "Chrome_Browser"});
-#line 129
+#line 99
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 7
 this.FeatureBackground();
-#line 130
+#line 100
     testRunner.Given("I enter valid Username in the email section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 131
+#line 101
  testRunner.And("I enter no password in the password section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 132
+#line 102
  testRunner.When("I click on Sigin in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 133
+#line 103
  testRunner.Then("I should be able to see a warning message displayed in the username section as we" +
                     "ll as in password section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -387,18 +315,18 @@ this.FeatureBackground();
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sigining In with long username", null, @__tags);
-#line 136
+#line 106
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 7
 this.FeatureBackground();
-#line 137
+#line 107
  testRunner.Given(string.Format("I enter long {0} in the email", username), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 138
+#line 108
  testRunner.And("I enter valid Password in the password section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 139
+#line 109
  testRunner.When("I click on Sigin in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 140
+#line 110
  testRunner.Then("I should be able to see a warning message displayed in the email section for long" +
                     " username", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

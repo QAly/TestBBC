@@ -12,7 +12,7 @@ Background:
 			
 @Browser_Chrome
 Scenario: Sigining In with Wrong Password Many Times
-	Given I enter valid Username in the email section
+	Given I input valid username
 	And wrong Password for the first time
 
 	| Password     |
